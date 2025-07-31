@@ -3,20 +3,23 @@
 import Image from 'next/image';
 import { FiArrowDownLeft } from 'react-icons/fi';
 import FlairButton from './Button';
+import Header from './Header';
 
 export default function HeroSection() {
   return (
-    <section className="min-h-screen bg-[#f5f4f1] text-black px-4 sm:px-8 md:px-4 pt-10 pb-8 flex flex-col justify-between">
-
+    
+    <section className="min-h-screen bg-[#f5f4f1] text-black px-4 md:px-8  pb-8 flex flex-col justify-between">
+      <Header />
       {/* Big Heading */}
-      <div className="md:text-center mt-20 md:mt-24">
-        <h1 className=" text-[3.3rem] md:text-[11.3rem] font-bold font-proxima uppercase leading-none tracking-tight mb-2">
+      <div>
+      <div className="md:text-center mt-12 md:mt-0">
+        <h1 className=" text-[3.3rem] md:text-[11.3rem] font-bold font-proxima uppercase leading-none tracking-tight mb-12 md:mb-8">
           CREATIVE
         </h1>
       </div>
 
       {/* Bottom 3-column layout */}
-      <div className="flex md:h-[50vh] flex-col md:flex-row justify-between items-start md:px-8 md:items-start gap-8 md:gap-16">
+      <div className="flex md:h-[50vh] flex-col md:flex-row justify-between items-start md:items-start gap-8 md:gap-16">
         {/* Left: Arrow + Text + CTA */}
         <div className="w-full md:w-1/3 min-h-full">
           <div className="hidden md:block text-xl text-[#5c5c49] mt-4 mb-12">
@@ -78,7 +81,7 @@ export default function HeroSection() {
           </div>
         </div>
 
-      </div>
+      </div></div>
     </section>
   );
 }

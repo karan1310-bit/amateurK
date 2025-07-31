@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+body {
+  @apply bg-[#f5f4f1] text-black font-satoshi;
+}
+
 @layer base {
   @font-face {
     font-family: "Satoshi";

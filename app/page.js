@@ -3,7 +3,8 @@ import React from 'react'
 
 const page = () => {
   return (
-    <main>
+    <main className='bg-[#f5f4f1]'>
+      
       <HeroSection />
     </main>
   )
