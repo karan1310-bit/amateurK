@@ -52,6 +52,8 @@ const MessageSection = () => {
       scrollTrigger: {
         trigger: '.msg-text-scroll',
         start: 'top 100%',
+        end: 'top 50%',
+        scrub: true,
       },
     }).to('.msg-text-scroll', {
       duration: 1,
