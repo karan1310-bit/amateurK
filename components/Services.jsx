@@ -64,7 +64,7 @@ const Services = () => {
                 className="absolute max-w-full overflow-hidden rotate-[3deg] -translate-y-40 md:-translate-y-24 border-[0.5vw] border-[#222123] z-12 first-title opacity-0"
                 style={{ clipPath: 'polygon(50% 0, 50% 0, 50% 100%, 50% 100%)' }}
               >
-                <div className="bg-[#c88e64] px-5 pt-3 pb-5 md:pt-1 md:pb-7">
+                <div className="bg-[#c88e64] px-5 pt-3 pb-3 md:pt-1 md:pb-7">
                   <h2 className="text-[#faeade] leading-none text-[3.2rem] md:text-[6rem] font-bold uppercase tracking-wide">
                     Web Design
                   </h2>
@@ -76,7 +76,7 @@ const Services = () => {
                 className="absolute max-w-full overflow-hidden rotate-[-1deg] -translate-y-20 md:translate-y-8 border-[0.5vw] border-[#222123] z-10 second-title opacity-0"
                 style={{ clipPath: 'polygon(50% 0, 50% 0, 50% 100%, 50% 100%)' }}
               >
-                <div className="bg-[#faeade] px-5 pt-3 pb-5 md:pt-1 md:pb-7">
+                <div className="bg-[#faeade] px-5 pt-3 pb-3 md:pt-1 md:pb-7">
                   <h2 className="text-[#222123] leading-none text-[2.5rem] md:text-[6rem] font-bold uppercase tracking-wide">
                     Web Developement
                   </h2>
@@ -88,7 +88,7 @@ const Services = () => {
                 className="absolute max-w-full overflow-hidden rotate-[1deg] -translate-y-0 md:translate-y-40 border-[0.5vw] border-[#222123] z-12 third-title opacity-0"
                 style={{ clipPath: 'polygon(50% 0, 50% 0, 50% 100%, 50% 100%)' }}
               >
-                <div className="bg-[#7F3B2D] px-5 pt-3 pb-5 md:pt-1 md:pb-7">
+                <div className="bg-[#7F3B2D] px-5 pt-3 pb-3 md:pt-1 md:pb-7">
                   <h2 className="text-[#faeade] leading-none text-[3.2rem] md:text-[6rem] font-bold uppercase tracking-wide">
                     Creative Dev
                   </h2>
@@ -100,7 +100,7 @@ const Services = () => {
                 className="absolute max-w-full overflow-hidden rotate-[-4deg] translate-y-20 md:translate-y-72 border-[0.5vw] border-[#222123] z-10 fourth-title opacity-0"
                 style={{ clipPath: 'polygon(50% 0, 50% 0, 50% 100%, 50% 100%)' }}
               >
-                <div className="bg-[#FED775] px-5 pt-3 pb-5 md:pt-1 md:pb-7">
+                <div className="bg-[#FED775] px-5 pt-3 pb-3 md:pt-1 md:pb-7">
                   <h2 className="text-[#2E2D2F] leading-none text-[3.2rem] md:text-[6rem] font-bold uppercase tracking-wide">
                     Animations
                   </h2>

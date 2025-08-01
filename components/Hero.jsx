@@ -65,11 +65,11 @@ export default function HeroSection() {
       <div className="hero-wrapper flex flex-col justify-between ">
         <Header />
         <div className="hero-container bg-[#ffffff] text-black px-4 md:px-8 pb-20">
-          <div className="md:text-center mt-6 md:mt-8">
-            <div className="flex flex-col md:flex-row md:justify-center md:items-end gap-0 md:gap-8 mb-4 md:mb-12">
+          <div className="md:text-center mt-8 md:mt-8">
+            <div className="flex flex-col md:flex-row md:justify-center md:items-end gap-0 md:gap-8 mb-6 md:mb-12">
               {/* CREATIVE */}
               <div className="overflow-hidden">
-                <h1 className="text-creative text-[6.2rem] md:text-[9rem] font-normal font-turtosk pb-6 uppercase leading-none tracking-tight">
+                <h1 className="text-creative text-[6rem] md:text-[9rem] font-normal font-turtosk pb-4 md:pb-6 uppercase leading-none tracking-tight">
                   CREATIVE
                 </h1>
               </div>
@@ -77,7 +77,7 @@ export default function HeroSection() {
               {/* DEVELOPER */}
               <div className="hero-text-scroll rotate-[-2.5deg] border-[1vw] w-fit md:border-[0.5vw] border-[#8B8B72] [clip-path:polygon(50%_0,50%_0,50%_100%,50%_100%)]">
                 <div className="bg-[#3a3733]">
-                  <h1 className="hero-developer uppercase text-[4.5rem] md:text-[8rem] font-turtosk font-normal text-[#FFFFFF] leading-[1.1] tracking-wide px-4 pb-5 md:pb-6 pt-0 md:pt-0">
+                  <h1 className="hero-developer uppercase text-[4rem] md:text-[8rem] font-turtosk font-normal text-[#FFFFFF] leading-[1.1] tracking-wide px-4 pb-4 md:pb-6 pt-2 md:pt-0">
                     Developer
                   </h1>
                 </div>
@@ -87,7 +87,7 @@ export default function HeroSection() {
 
           <div className="flex md:h-[50vh] flex-col md:flex-row justify-between items-start md:items-start gap-8 md:gap-16">
             {/* LEFT COLUMN */}
-            <div className="w-full md:w-1/3 min-h-full space-y-4">
+            <div className="w-full md:w-1/3 min-h-full space-y-2 md:space-y-4">
               <div className="overflow-hidden">
                 <div className="animate-up hidden md:block text-xl text-[#5c5c49] mt-4 mb-8">
                   <FiArrowDownLeft className="inline-block text-2xl text-[#5c5c49] rotate-270" />
@@ -114,7 +114,7 @@ export default function HeroSection() {
                 <div className="animate-up w-48 h-60 sm:w-52 sm:h-64 md:w-80 md:h-full relative overflow-hidden">
                   <Image
                     src="/images/hero.jpg"
-                    alt="Huy Nguyen"
+                    alt="K"
                     fill
                     className="object-cover"
                     priority

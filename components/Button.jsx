@@ -74,7 +74,7 @@ const FlairButton = () => {
     `Hi there! I’d love to reserve this place — is it available?`
   )}`} target="_blank"
       ref={buttonRef}
-      className="relative inline-flex items-center justify-center px-6 md:px-6 py-3 md:py-4 font-proxima font-semibold text-white bg-[#3a3733] rounded-4xl transition-colors duration-150 ease-out group overflow-hidden"
+      className="relative inline-flex items-center justify-center px-5 md:px-6 py-3 md:py-4 font-proxima font-semibold text-white bg-[#3a3733] rounded-4xl transition-colors duration-150 ease-out group overflow-hidden"
     >
       <span
         ref={flairRef}
@@ -82,7 +82,7 @@ const FlairButton = () => {
       >
         <span className="absolute w-[170%] aspect-square bg-[#8B8B72] rounded-full left-0 top-0 transform -translate-x-1/2 -translate-y-1/2"></span>
       </span>
-      <span className="relative z-10 group-hover:text-white transition-colors tracking-wide uppercase text-lg md:text-xl duration-200">Book A Call <FiArrowDownLeft className="inline-block text-xl group-hover:text-white text-[#999982] rotate-180" />
+      <span className="relative z-10 group-hover:text-white transition-colors tracking-wide uppercase text-base md:text-xl duration-200">Book A Call <FiArrowDownLeft className="inline-block text-xl group-hover:text-white text-[#999982] rotate-180" />
 </span>
     </a>
   );

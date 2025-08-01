@@ -89,7 +89,7 @@ const MessageSection = () => {
                 clipPath: 'polygon(0 0, 0 0, 0 100%, 0% 100%)',
               }}
             >
-              <div className="bg-[#7f3b2d] px-5 pb-3 md:pb-5">
+              <div className="bg-[#7f3b2d] px-5 pb-3 pt-3 md:pt-1 md:pb-5">
                 <h2 className="text-[#FFFFFF] leading-none">Stand Out</h2>
               </div>
             </div>
@@ -100,7 +100,7 @@ const MessageSection = () => {
           </div>
 
           {/* Paragraph */}
-          <div className="flex justify-center items-center mt-10 md:mt-12">
+          <div className="flex justify-center items-center mt-6 md:mt-12">
             <div className="max-w-4xl px-10 flex justify-center items-center overflow-hidden">
               <div className="overflow-hidden">
     <p className="text-center text-base md:text-xl font-satoshi leading-tight">
