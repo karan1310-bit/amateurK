@@ -5,83 +5,162 @@ import { FiArrowDownLeft } from 'react-icons/fi';
 import FlairButton from './Button';
 import Header from './Header';
 
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
+import { SplitText } from 'gsap/all';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(SplitText, ScrollTrigger);
+
 export default function HeroSection() {
+  useGSAP(() => {
+    // Developer split animation
+    const split = SplitText.create('.hero-developer', { type: 'chars' });
+
+    gsap
+      .timeline({ delay: 0.5 })
+      .to('.hero-text-scroll', {
+        duration: 1,
+        clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
+        ease: 'circ.out',
+      })
+      .from(
+        split.chars,
+        {
+          yPercent: 200,
+          stagger: 0.025,
+          ease: 'power2.out',
+        },
+        '-=0.7'
+      );
+
+    // Animate everything up from hidden
+    gsap.from(['.text-creative', '.animate-up'], {
+      y: 100,
+      opacity: 0,
+      duration: 1.3,
+      ease: 'power4.out',
+      stagger: 0.2,
+      delay: 0.3,
+    });
+
+    // Scroll-triggered section scale/rotate
+    gsap.timeline({
+      scrollTrigger: {
+        trigger: '.hero-wrapper',
+        start: 'top top',
+        end: 'bottom top',
+        scrub: true,
+      },
+    }).to('.hero-wrapper', {
+      rotate: 7,
+      scale: 0.9,
+      yPercent: 30,
+      ease: 'power1.inOut',
+    });
+  });
+
   return (
-    
-    <section className="min-h-screen bg-[#f5f4f1] text-black px-4 md:px-8  pb-8 flex flex-col justify-between">
-      <Header />
-      {/* Big Heading */}
-      <div>
-      <div className="md:text-center mt-12 md:mt-0">
-        <h1 className=" text-[3.3rem] md:text-[11.3rem] font-bold font-proxima uppercase leading-none tracking-tight mb-12 md:mb-8">
-          CREATIVE
-        </h1>
+    <section className="min-h-screen">
+      <div className="hero-wrapper flex flex-col justify-between">
+        <Header />
+        <div className="hero-container bg-[#f5f4f1] text-black px-4 md:px-8 pb-8">
+          <div className="md:text-center mt-8 md:mt-12">
+            <div className="flex flex-col md:flex-row md:justify-center md:items-end gap-0 md:gap-8 mb-8 md:mb-12">
+              {/* CREATIVE */}
+              <div className="overflow-hidden">
+                <h1 className="text-creative text-[4.5rem] md:text-[9rem] font-bold font-proxima uppercase leading-none tracking-tight">
+                  CREATIVE
+                </h1>
+              </div>
+
+              {/* DEVELOPER */}
+              <div className="hero-text-scroll rotate-[-2deg] border-[1vw] md:border-[0.5vw] border-[#8B8B72] [clip-path:polygon(50%_0,50%_0,50%_100%,50%_100%)]">
+                <div className="bg-[#3a3733]">
+                  <h1 className="hero-developer uppercase text-[3.4rem] md:text-[7rem] font-proxima font-bold text-[#FFFFFF] leading-[1.1] tracking-[-0.01em] px-4 pb-3 pt-2 md:pt-1">
+                    Developer
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex md:h-[50vh] flex-col md:flex-row justify-between items-start md:items-start gap-8 md:gap-16">
+            {/* LEFT COLUMN */}
+            <div className="w-full md:w-1/3 min-h-full space-y-4">
+              <div className="overflow-hidden">
+                <div className="animate-up hidden md:block text-xl text-[#5c5c49] mt-4 mb-8">
+                  <FiArrowDownLeft className="inline-block text-2xl text-[#5c5c49] rotate-270" />
+                </div>
+              </div>
+
+              <div className="overflow-hidden">
+                <p className="animate-up text-gray-800 mb-2 md:mb-4 text-xl sm:text-3xl font-satoshi leading-[1.1] md:leading-none">
+                  I help growing brands and startups gain an unfair advantage through
+                  premium, results driven websites.
+                </p>
+              </div>
+
+              <div className="overflow-hidden">
+                <span className="animate-up inline-block">
+                  <FlairButton />
+                </span>
+              </div>
+            </div>
+
+            {/* CENTER IMAGE */}
+            <div className="w-full md:w-1/3 h-full justify-center hidden md:flex">
+              <div className="overflow-hidden w-full flex justify-center">
+                <div className="animate-up w-48 h-60 sm:w-52 sm:h-64 md:w-80 md:h-full relative overflow-hidden">
+                  <Image
+                    src="/images/hero.jpg"
+                    alt="Huy Nguyen"
+                    fill
+                    className="object-cover"
+                    priority
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* RIGHT COLUMN */}
+            <div className="w-full md:w-1/3 h-full justify-end font-satoshi text-right text-gray-900 mt-4 md:mt-0 hidden md:flex overflow-hidden">
+              <div className="animate-up flex flex-col justify-end items-end">
+                <p className="uppercase text-lg tracking-wide">
+                  Available for freelance work
+                </p>
+                <p className="text-3xl sm:text-8xl font-bold">AUG ‘25</p>
+              </div>
+            </div>
+
+            {/* MOBILE LAYOUT (now animated!) */}
+            <div className="flex md:hidden w-full h-full justify-end items-end">
+              {/* IMAGE */}
+              <div className="w-1/2 h-full flex justify-center overflow-hidden">
+                <div className="animate-up w-48 h-60 relative overflow-hidden">
+                  <Image
+                    src="/images/hero.jpg"
+                    alt="Huy Nguyen"
+                    fill
+                    className="object-cover"
+                    priority
+                  />
+                </div>
+              </div>
+
+              {/* TEXT */}
+              <div className="w-1/2 flex flex-col justify-end items-end font-satoshi text-right text-gray-900 overflow-hidden">
+                <div className="animate-up">
+                  <p className="uppercase text-base tracking-wide leading-none">
+                    Available for freelance work
+                  </p>
+                  <p className="text-2xl sm:text-8xl font-bold">AUG ‘25</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
-      {/* Bottom 3-column layout */}
-      <div className="flex md:h-[50vh] flex-col md:flex-row justify-between items-start md:items-start gap-8 md:gap-16">
-        {/* Left: Arrow + Text + CTA */}
-        <div className="w-full md:w-1/3 min-h-full">
-          <div className="hidden md:block text-xl text-[#5c5c49] mt-4 mb-12">
-             <FiArrowDownLeft className="inline-block text-2xl text-[#5c5c49] rotate-270" />
-          </div>
-          <p className="text-gray-800 mb-4 md:mb-6 text-xl sm:text-3xl font-satoshi leading-[1.1] md:leading-none">
-            I help growing brands and startups gain an unfair advantage through
-            premium, results driven websites.
-          </p>
-          <span>
-            <FlairButton />
-          </span>
-        </div>
-
-        {/* Center: Image */}
-        <div className="hidden md:flex w-full md:w-1/3 h-full justify-center">
-          <div className="w-48 h-60 sm:w-52 sm:h-64 md:w-80 md:h-full relative overflow-hidden">
-            <Image
-              src="/images/hero.jpg"
-              alt="Huy Nguyen"
-              fill
-              className="object-cover"
-              priority
-            />
-          </div>
-        </div>
-
-        {/* Right: Freelance Info */}
-        <div className="hidden md:flex w-full md:w-1/3 h-full justify-end font-satoshi text-right text-gray-900 mt-4 md:mt-0">
-            <div className="flex flex-col justify-end items-end">
-            <p className="uppercase text-lg tracking-wide">
-              Available for freelance work
-            </p>
-            <p className="text-3xl sm:text-8xl font-bold">AUG ‘25</p>
-          </div>
-        </div>
-
-{/* Mobile: Freelance Info */}
-        <div className='flex md:hidden w-full h-full justify-end items-end'>
-          <div className="flex w-1/2 h-full justify-center">
-          <div className="w-48 h-60 relative overflow-hidden">
-            <Image
-              src="/images/hero.jpg"
-              alt="Huy Nguyen"
-              fill
-              className="object-cover"
-              priority
-            />
-          </div>
-          </div>
-
-          <div className="flex flex-col justify-end items-end w-1/2 font-satoshi text-right text-gray-900">
-            <div className="">
-            <p className="uppercase text-base tracking-wide leading-none">
-              Available for freelance work
-            </p>
-            <p className="text-2xl sm:text-8xl font-bold">AUG ‘25</p>
-          </div>
-          </div>
-        </div>
-
-      </div></div>
     </section>
   );
 }

@@ -3,9 +3,9 @@ import React from 'react'
 
 const page = () => {
   return (
-    <main className='bg-[#f5f4f1]'>
-      
+    <main className=''>
       <HeroSection />
+      <div className='h-screen'></div>
     </main>
   )
 }
