@@ -24,7 +24,7 @@ export default function Header() {
   }, []);
 
   return (
-    <nav className="flex md:items-center gap-4 bg-[#f5f4f1] px-4 md:px-8 justify-between py-4 md:py-5 font-satoshi w-full">
+    <nav className="flex md:items-center gap-4 bg-[#ffffff] px-4 md:px-8 justify-between py-4 md:py-5 font-satoshi w-full">
       {/* Logo / Site Title */}
       <div className="flex flex-col md:flex-row md:items-center gap-0 md:gap-2">
         <p className="nav-word text-2xl md:text-3xl font-bold">

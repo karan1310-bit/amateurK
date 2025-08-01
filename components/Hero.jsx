@@ -61,23 +61,23 @@ export default function HeroSection() {
   });
 
   return (
-    <section className="min-h-screen">
-      <div className="hero-wrapper flex flex-col justify-between">
+    <section className="overflow-hidden">
+      <div className="hero-wrapper flex flex-col justify-between ">
         <Header />
-        <div className="hero-container bg-[#f5f4f1] text-black px-4 md:px-8 pb-8">
-          <div className="md:text-center mt-8 md:mt-12">
-            <div className="flex flex-col md:flex-row md:justify-center md:items-end gap-0 md:gap-8 mb-8 md:mb-12">
+        <div className="hero-container bg-[#ffffff] text-black px-4 md:px-8 pb-20">
+          <div className="md:text-center mt-6 md:mt-8">
+            <div className="flex flex-col md:flex-row md:justify-center md:items-end gap-0 md:gap-8 mb-4 md:mb-12">
               {/* CREATIVE */}
               <div className="overflow-hidden">
-                <h1 className="text-creative text-[4.5rem] md:text-[9rem] font-bold font-proxima uppercase leading-none tracking-tight">
+                <h1 className="text-creative text-[6.2rem] md:text-[9rem] font-normal font-turtosk pb-6 uppercase leading-none tracking-tight">
                   CREATIVE
                 </h1>
               </div>
 
               {/* DEVELOPER */}
-              <div className="hero-text-scroll rotate-[-2deg] border-[1vw] md:border-[0.5vw] border-[#8B8B72] [clip-path:polygon(50%_0,50%_0,50%_100%,50%_100%)]">
+              <div className="hero-text-scroll rotate-[-2.5deg] border-[1vw] w-fit md:border-[0.5vw] border-[#8B8B72] [clip-path:polygon(50%_0,50%_0,50%_100%,50%_100%)]">
                 <div className="bg-[#3a3733]">
-                  <h1 className="hero-developer uppercase text-[3.4rem] md:text-[7rem] font-proxima font-bold text-[#FFFFFF] leading-[1.1] tracking-[-0.01em] px-4 pb-3 pt-2 md:pt-1">
+                  <h1 className="hero-developer uppercase text-[4.5rem] md:text-[8rem] font-turtosk font-normal text-[#FFFFFF] leading-[1.1] tracking-wide px-4 pb-5 md:pb-6 pt-0 md:pt-0">
                     Developer
                   </h1>
                 </div>
@@ -129,7 +129,7 @@ export default function HeroSection() {
                 <p className="uppercase text-lg tracking-wide">
                   Available for freelance work
                 </p>
-                <p className="text-3xl sm:text-8xl font-bold">AUG ‘25</p>
+                <p className="text-3xl sm:text-8xl tracking-tight font-semibold">AUG ‘25</p>
               </div>
             </div>
 

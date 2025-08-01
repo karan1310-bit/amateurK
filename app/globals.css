@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+body {
+  overflow-x: hidden;
+  background-color: black;
+}
+
 @layer base {
   @font-face {
     font-family: "Satoshi";
@@ -20,6 +25,11 @@
     font-family: "heading";
     src: url("../public/fonts/Heading.woff2") format("woff2");
   }
+
+   @font-face {
+    font-family: "turtosk";
+    src: url("../public/fonts/Turtosk.ttf") format("truetype");
+  }
 }
 
 @theme {
@@ -36,4 +46,8 @@
 
 @theme {
   --font-heading: "heading", sans-serif;
+}
+
+@theme {
+  --font-turtosk: "turtosk", sans-serif;
 }
