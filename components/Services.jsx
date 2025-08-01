@@ -48,7 +48,7 @@ const Services = () => {
 
   return (
     <section className="bg-[#3a3733] text-[#ffffff] font-turtosk min-h-screen w-screen overflow-hidden flex justify-start items-s relative z-20 message-content">
-      <div className="w-full px-4 py-12 md:pt-8 flex justify-center items-center">
+      <div className="w-full px-4 py-4 md:pt-8 flex justify-center items-center">
         <div className="w-full h-full">
           {/* Headings */}
           <div className="flex flex-col items-center justify-center gap-14 md:gap-4 text-center uppercase font-normal tracking-wide leading-tight text-5xl md:text-[5.5rem]">
@@ -77,7 +77,7 @@ const Services = () => {
                 style={{ clipPath: 'polygon(50% 0, 50% 0, 50% 100%, 50% 100%)' }}
               >
                 <div className="bg-[#faeade] px-5 pt-3 pb-3 md:pt-1 md:pb-7">
-                  <h2 className="text-[#222123] leading-none text-[2.5rem] md:text-[6rem] font-bold uppercase tracking-wide">
+                  <h2 className="text-[#222123] leading-none text-[2.3rem] md:text-[6rem] font-bold uppercase tracking-wide">
                     Web Developement
                   </h2>
                 </div>

@@ -69,7 +69,7 @@ export default function HeroSection() {
             <div className="flex flex-col md:flex-row md:justify-center md:items-end gap-0 md:gap-8 mb-6 md:mb-12">
               {/* CREATIVE */}
               <div className="overflow-hidden">
-                <h1 className="text-creative text-[6rem] md:text-[9rem] font-normal font-turtosk pb-4 md:pb-6 uppercase leading-none tracking-tight">
+                <h1 className="text-creative text-[6rem] md:text-[9rem] font-normal font-turtosk pb-2 md:pb-6 uppercase leading-none tracking-tight">
                   CREATIVE
                 </h1>
               </div>

@@ -84,7 +84,7 @@ const MessageSection = () => {
             </h1>
 
             <div
-              className="absolute max-w-full overflow-hidden rotate-[3deg] -translate-y-14 md:-translate-y-12 border-[0.5vw] border-[#c88e64] z-10 msg-text-scroll"
+              className="absolute max-w-full overflow-hidden rotate-[3deg] -translate-y-16 md:-translate-y-12 border-[0.5vw] border-[#c88e64] z-10 msg-text-scroll"
               style={{
                 clipPath: 'polygon(0 0, 0 0, 0 100%, 0% 100%)',
               }}
