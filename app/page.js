@@ -1,6 +1,8 @@
 "use client"
 
 import MessageSection from '@/components/About1'
+import CTA from '@/components/CTA'
+import Footer from '@/components/Footer'
 import HeroSection from '@/components/Hero'
 import Services from '@/components/Services'
 import Lenis from 'lenis'
@@ -24,10 +26,12 @@ const page = () => {
   }, [])
 
   return (
-    <main className='bg-[#3a3733]'>
+    <main className='bg-[#222123]'>
       <HeroSection />
       <MessageSection />
       <Services />
+      <CTA />
+      <Footer />
     </main>
   )
 }

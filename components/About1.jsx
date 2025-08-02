@@ -4,7 +4,6 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { SplitText } from 'gsap/SplitText';
-import { useEffect } from 'react';
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
@@ -74,7 +73,7 @@ const MessageSection = () => {
   }, []);
 
   return (
-    <section className="bg-[#3a3733] text-[#ffffff] font-turtosk min-h-screen w-screen overflow-hidden flex justify-center items-center relative z-20 message-content">
+    <section className="bg-[#222123] text-[#ffffff] font-turtosk min-h-screen w-screen overflow-hidden flex justify-center items-center relative z-20 message-content">
       <div className="w-full px-4 py-12 md:pt-16 flex justify-center items-center">
         <div className="w-full h-full">
           {/* Headings */}
@@ -101,7 +100,7 @@ const MessageSection = () => {
 
           {/* Paragraph */}
           <div className="flex justify-center items-center mt-6 md:mt-12">
-            <div className="max-w-4xl px-10 flex justify-center items-center overflow-hidden">
+            <div className="max-w-5xl px-10 flex justify-center items-center overflow-hidden">
               <div className="overflow-hidden">
     <p className="text-center text-base md:text-xl font-satoshi leading-tight">
       Your brand deserves more than a template. I build fast, custom websites that captivate, convert, and scale. If you're ready to elevate your online presence, I’m here to make it happen.

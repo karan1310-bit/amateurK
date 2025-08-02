@@ -47,7 +47,7 @@ const Services = () => {
   }, []);
 
   return (
-    <section className="bg-[#3a3733] text-[#ffffff] font-turtosk min-h-screen w-screen overflow-hidden flex justify-start items-s relative z-20 message-content">
+    <section className="bg-[#222123] text-[#ffffff] font-turtosk h-[70vh] md:min-h-screen w-screen overflow-hidden flex justify-start relative z-20 message-content">
       <div className="w-full px-4 py-4 md:pt-8 flex justify-center items-center">
         <div className="w-full h-full">
           {/* Headings */}
@@ -65,7 +65,7 @@ const Services = () => {
                 style={{ clipPath: 'polygon(50% 0, 50% 0, 50% 100%, 50% 100%)' }}
               >
                 <div className="bg-[#c88e64] px-5 pt-3 pb-3 md:pt-1 md:pb-7">
-                  <h2 className="text-[#faeade] leading-none text-[3.2rem] md:text-[6rem] font-bold uppercase tracking-wide">
+                  <h2 className="text-[#fdf5ee] leading-none text-[3.2rem] md:text-[6rem] font-bold uppercase tracking-wide">
                     Web Design
                   </h2>
                 </div>
@@ -89,7 +89,7 @@ const Services = () => {
                 style={{ clipPath: 'polygon(50% 0, 50% 0, 50% 100%, 50% 100%)' }}
               >
                 <div className="bg-[#7F3B2D] px-5 pt-3 pb-3 md:pt-1 md:pb-7">
-                  <h2 className="text-[#faeade] leading-none text-[3.2rem] md:text-[6rem] font-bold uppercase tracking-wide">
+                  <h2 className="text-[#f9f0ea] leading-none text-[3.2rem] md:text-[6rem] font-bold uppercase tracking-wide">
                     Creative Dev
                   </h2>
                 </div>

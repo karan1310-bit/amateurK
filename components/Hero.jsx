@@ -76,7 +76,7 @@ export default function HeroSection() {
 
               {/* DEVELOPER */}
               <div className="hero-text-scroll rotate-[-2.5deg] border-[1vw] w-fit md:border-[0.5vw] border-[#8B8B72] [clip-path:polygon(50%_0,50%_0,50%_100%,50%_100%)]">
-                <div className="bg-[#3a3733]">
+                <div className="bg-[#222123]">
                   <h1 className="hero-developer uppercase text-[4rem] md:text-[8rem] font-turtosk font-normal text-[#FFFFFF] leading-[1.1] tracking-wide px-4 pb-2 md:pb-6 pt-3 md:pt-0">
                     Developer
                   </h1>
