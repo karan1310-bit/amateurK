@@ -1,4 +1,4 @@
-"'use client'"
+"use client"
 
 import MessageSection from '@/components/About1'
 import HeroSection from '@/components/Hero'
