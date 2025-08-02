@@ -3,7 +3,9 @@ import React from 'react'
 
 const Effect = ({ id, title, leftIcon, containerClass, rightIcon, link, textClass }) => {
   return (
-    <Link href={`/${link}`}>
+    <Link 
+     target='_blank'
+     href={`${link}`}>
     <button
       id={id}
       className={
