@@ -27,7 +27,8 @@ const page = () => {
 
   return (
     <main className='bg-[#222123]'>
-      <HeroSection />
+      <section className='bg-[#ffffff]'>
+      <HeroSection /></section>
       <MessageSection />
       <Services />
       <CTA />

@@ -66,7 +66,7 @@ export default function Eyes() {
   }, { scope: containerRef });
 
   return (
-  <div className="flex items-center justify-center min-h-fit overflow-hidden font-satoshi">
+ <div className="flex items-center justify-center min-h-fit overflow-hidden font-satoshi">
   <div
     ref={containerRef}
     className="w-[180px] h-[160px] rounded-[12px] shadow-md bg-[#222123] flex items-center justify-center pb-4 relative"
@@ -76,7 +76,7 @@ export default function Eyes() {
         <div
           key={i}
           ref={(el) => (eyeRefs.current[i] = el)}
-          className="relative w-[50px] h-[50px] rounded-full flex items-center justify-center shadow-md overflow-hidden bg-[radial-gradient(circle_at_center,_#2e2e2e,_#222123)]"
+          className="relative w-[50px] h-[50px] rounded-full flex items-center justify-center shadow-md overflow-hidden bg-[radial-gradient(circle_at_center,_#555555,_#2e2e2e)]"
         >
           {/* Pupil */}
           <div className="pupil w-[20px] h-[20px] rounded-full bg-[radial-gradient(circle,_#000_60%,_#111)] absolute transition-transform duration-75 ease-out" />

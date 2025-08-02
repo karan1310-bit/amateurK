@@ -41,7 +41,7 @@ export default function Clock() {
   return (
     <p
       ref={clockRef}
-      className="text-base md:text-lg font-satoshi font-medium tracking-wider md:text-right"
+      className="text-sm md:text-lg font-satoshi font-medium tracking-wider md:text-right"
     >
       {formatTime(time)}
     </p>
