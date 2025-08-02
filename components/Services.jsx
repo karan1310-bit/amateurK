@@ -57,7 +57,7 @@ const Services = () => {
             </h1>
 
             {/* All 4 ClipPathStyle Titles */}
-            <div className="relative w-full flex flex-col justify-center items-center mt-44">
+            <div className="relative w-full flex flex-col justify-center items-center mt-40 md:mt-44">
 
               {/* 1. Shelf Stable */}
               <div
@@ -73,7 +73,7 @@ const Services = () => {
 
               {/* 2. Protein + Caffeine */}
               <div
-                className="absolute max-w-full overflow-hidden rotate-[-1deg] -translate-y-20 md:translate-y-8 border-[0.5vw] border-[#222123] z-10 second-title opacity-0"
+                className="absolute max-w-full overflow-hidden rotate-[-1deg] -translate-y-24 md:translate-y-8 border-[0.5vw] border-[#222123] z-10 second-title opacity-0"
                 style={{ clipPath: 'polygon(50% 0, 50% 0, 50% 100%, 50% 100%)' }}
               >
                 <div className="bg-[#faeade] px-5 pt-3 pb-3 md:pt-1 md:pb-7">
@@ -85,7 +85,7 @@ const Services = () => {
 
               {/* 3. Infinitely Recyclable */}
               <div
-                className="absolute max-w-full overflow-hidden rotate-[1deg] -translate-y-0 md:translate-y-40 border-[0.5vw] border-[#222123] z-12 third-title opacity-0"
+                className="absolute max-w-full overflow-hidden rotate-[1deg] -translate-y-7 md:translate-y-40 border-[0.5vw] border-[#222123] z-12 third-title opacity-0"
                 style={{ clipPath: 'polygon(50% 0, 50% 0, 50% 100%, 50% 100%)' }}
               >
                 <div className="bg-[#7F3B2D] px-5 pt-3 pb-3 md:pt-1 md:pb-7">
@@ -97,7 +97,7 @@ const Services = () => {
 
               {/* 4. Lactose Free */}
               <div
-                className="absolute max-w-full overflow-hidden rotate-[-4deg] translate-y-20 md:translate-y-72 border-[0.5vw] border-[#222123] z-10 fourth-title opacity-0"
+                className="absolute max-w-full overflow-hidden rotate-[-4deg] translate-y-12 md:translate-y-72 border-[0.5vw] border-[#222123] z-10 fourth-title opacity-0"
                 style={{ clipPath: 'polygon(50% 0, 50% 0, 50% 100%, 50% 100%)' }}
               >
                 <div className="bg-[#FED775] px-5 pt-3 pb-3 md:pt-1 md:pb-7">
