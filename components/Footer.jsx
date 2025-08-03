@@ -14,8 +14,8 @@ export default function Footer() {
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-8 border-b border-gray-600 pb-10">
           {/* Menu */}
           <div>
-            <h3 className="font-normal text-xl md:text-2xl mb-4 border-b border-gray-600 pb-2 md:pb-4">Menu</h3>
-            <ul className="space-y-2 leading-tight text-base md:text-lg">
+            <h3 className="font-normal text-lg md:text-2xl mb-4 border-b border-gray-600 pb-2 md:pb-4">Menu</h3>
+            <ul className="space-y-2 leading-tight text-sm md:text-lg">
               <li><Effect title="Home" link="#" /></li>
               <li><Effect title="Services" link="#" /></li>
               <li><Effect title="Works" link="#" /></li>
@@ -27,8 +27,8 @@ export default function Footer() {
 
           {/* Socials */}
           <div>
-            <h3 className="font-normal text-xl md:text-2xl mb-4 border-b border-gray-600 pb-2 md:pb-4">Socials</h3>
-            <ul className="space-y-2 text-base md:text-lg leading-tight">
+            <h3 className="font-normal text-lg md:text-2xl mb-4 border-b border-gray-600 pb-2 md:pb-4">Socials</h3>
+            <ul className="space-y-2 text-base md:text-sm leading-tight">
               <li><Effect title="LinkedIn" link="https://www.linkedin.com/in/karan-singh-bhati-2b4888316?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" /></li>
               <li><Effect title="X" link="https://x.com/bhati_131?t=vnNfkKdx59cJmwNvNuOHrQ&s=09" /></li>
               <li><Effect title="Instagram" link="https://www.instagram.com/bhati_.01?igsh=Z3VyZjlpYjh5Znc2" /></li>
@@ -44,8 +44,8 @@ export default function Footer() {
         </div>
 
         {/* Bottom Section */}
-        <div className="flex flex-row justify-between items-start sm:items-center pt-6 text-base md:text-lg">
-          <p className="text-base font-normal leading-tight tracking-tight">
+        <div className="flex flex-row justify-between items-start sm:items-center pt-6 text-sm md:text-lg">
+          <p className="text-sm font-normal leading-tight tracking-tight">
             © 2025 Karan<br className="sm:hidden" /> All rights reserved.
           </p>
 
